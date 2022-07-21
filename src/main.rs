@@ -35,8 +35,8 @@ fn main() {
     // Output the loaded binary image to standard output.
     // (Background: ".", Foreground: "#")
     println!("\n[Binary image]");
-    for labeled_image_row in binary_image.iter() {
-        labeled_image_row.iter().for_each(|&x| {
+    for binary_image_row in binary_image.iter() {
+        binary_image_row.iter().for_each(|&x| {
             if x {
                 print!("#");
             } else {
